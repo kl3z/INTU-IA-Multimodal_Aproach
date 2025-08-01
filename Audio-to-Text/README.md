@@ -1,19 +1,19 @@
-# 🎙️ INTU-IA – Audio Transcription Evaluation (Whisper Integration)
+# INTU-IA – Audio Transcription Evaluation (Whisper Integration)
 
 This folder summarizes a key part of the development process for the **INTU-IA** system, specifically focusing on the **transcription of audio to text** using the [Whisper large model](https://openai.com/index/whisper/) developed by OpenAI  
 ([Radford et al., 2022](https://cdn.openai.com/papers/whisper.pdf)).
 
 ---
 
-## 🧪 Objective
+## Objective
 
 Due to the unavailability of real interrogation recordings during the development phase, we adopted an **LLM-driven synthetic approach** to test and validate the transcription capabilities of the INTU-IA audio module.
 
 ---
 
-## 🧰 Methodology
+## Methodology
 
-### 1. 🧠 Synthetic Interrogation Generation
+### 1. Synthetic Interrogation Generation
 
 Using **ChatGPT**, we generated 36 fictional police interrogation scripts by providing structured prompts with inputs such as:
 - Topic of the interrogation
@@ -26,7 +26,7 @@ The generated interrogations are stored in:
 
 ---
 
-### 2. 🎥 Text-to-Video Synthesis with InVideo AI
+### 2. Text-to-Video Synthesis with InVideo AI
 
 To simulate real-world audio conditions, the scripts were converted into videos using [InVideo AI](https://invideo.io/), resulting in **36 synthetic videos**.
 
@@ -37,7 +37,7 @@ In addition, segments from the Portuguese legal drama *A Sentença* (TVI, 2024) 
 
 ---
 
-### 3. 🎧 Audio Transcription with Whisper
+### 3. Audio Transcription with Whisper
 
 The following script performs audio-to-text transcription:
 
@@ -46,7 +46,7 @@ It prompts the user to upload a `.mp4` file and outputs the corresponding `.txt`
 
 ---
 
-### 4. 🧹 Noise Filtering & WER Evaluation
+### 4. Noise Filtering & WER Evaluation
 
 Since ChatGPT-generated scripts often include environmental and narrative noise, we created the script:
 
@@ -58,7 +58,7 @@ Then, using the [JiWER](https://pypi.org/project/jiwer/) library, we computed th
 
 ---
 
-## 📊 Results
+## Results
 
 | Source Type                      | Avg. WER |
 |----------------------------------|----------|
@@ -69,7 +69,7 @@ The slightly higher WER in synthetic content likely results from TTS-like delive
 
 ---
 
-## 📚 References
+## References
 
 - OpenAI, “Whisper: Open-source speech recognition,” 2022. [Online]. Available: [https://openai.com/index/whisper/](https://openai.com/index/whisper/)
 - Alec Radford et al., *Robust Speech Recognition via Large-Scale Weak Supervision*, 2022. [PDF](https://cdn.openai.com/papers/whisper.pdf)
@@ -78,19 +78,11 @@ The slightly higher WER in synthetic content likely results from TTS-like delive
 
 ---
 
-## 📁 Folder Contents
+## Folder Contents
 
 - `Interrogations_LLM's.docx` – Synthetic interrogation scripts
 - `Transciption_Video_to_text.ipynb` – Whisper transcription notebook
 - `WER.ipynb` – Preprocessing and WER computation
 - `interrogatorio_respostas.csv` – Cleaned reference dataset
-
----
-
-## ✍️ Citation
-
-If using this resource for academic purposes, please cite the corresponding documents and tools used, including Whisper, InVideo, JiWER, and ChatGPT.
-
-
 
 

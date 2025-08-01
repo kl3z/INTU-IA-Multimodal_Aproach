@@ -83,5 +83,6 @@ The slightly higher WER in synthetic content likely results from TTS-like delive
 - `Transciption_Video_to_text.ipynb` – Whisper transcription notebook
 - `WER.ipynb` – Preprocessing and WER computation
 - `interrogatorio_respostas.csv` – Cleaned reference dataset
+- `csv_creater_with_sentences.ipynb` - Script to put sentences in structured data
 
 

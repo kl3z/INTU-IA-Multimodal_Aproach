@@ -64,7 +64,7 @@ Then, using the [JiWER](https://pypi.org/project/jiwer/) library, we computed th
 | Videos generated via InVideo AI | 15.93%   |
 | TV Series “A Sentença”          | 13.22%   |
 
-The slightly higher WER in synthetic content likely results from TTS-like delivery and narrative distractions, while real dialogue—despite background noise—yields better performance.
+The slightly higher WER in synthetic content likely results from TTS-like delivery and narrative distractions, while real dialogue—despite background noise, yields better performance.
 
 ---
 

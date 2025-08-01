@@ -1,7 +1,6 @@
 # INTU-IA – Audio Transcription Evaluation (Whisper Integration)
 
-This folder summarizes a key part of the development process for the **INTU-IA** system, specifically focusing on the **transcription of audio to text** using the [Whisper large model](https://openai.com/index/whisper/) developed by OpenAI  
-([Radford et al., 2022](https://cdn.openai.com/papers/whisper.pdf)).
+This folder summarizes a key part of the development process for the **INTU-IA** system, specifically focusing on the **transcription of audio to text** using the [Whisper large model](https://openai.com/index/whisper/) developed by OpenAI([Radford et al., 2022](https://cdn.openai.com/papers/whisper.pdf)).
 
 ---
 
